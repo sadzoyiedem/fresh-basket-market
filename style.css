@@ -9,23 +9,6 @@ body {
   overflow-x: hidden;
 }
 
-/* Mobile Menu Toggle */
-/* .mobile-menu-toggle {
-  display: none;
-  position: fixed;
-  top: 15px;
-  right: 20px;
-  z-index: 1001;
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  padding: 10px;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 24px;
-  line-height: 1;
-} */
-
 /* Header Styles */
 header {
   display: flex;
