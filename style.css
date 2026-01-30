@@ -1,0 +1,630 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+/* Mobile Menu Toggle */
+/* .mobile-menu-toggle {
+  display: none;
+  position: fixed;
+  top: 15px;
+  right: 20px;
+  z-index: 1001;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 24px;
+  line-height: 1;
+} */
+
+/* Header Styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  border-bottom: 1px solid #e0e0e0;
+  box-shadow: 0 1px 2px rgba(70, 69, 69, 0.1);
+  background-color: rgba(255, 255, 255, 0.98);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header .logo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+header .logo-wrapper i {
+  font-size: 24px;
+  color: #4CAF50;
+}
+
+header .logo-wrapper h3 {
+  font-size: 18px;
+  color: #374151;
+  font-weight: 600;
+}
+
+header nav {
+  display: flex;
+  gap: 30px;
+}
+
+header nav ul {
+  list-style: none;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+header nav ul a {
+  text-decoration: none;
+  color: #6b7280;
+  transition: color 0.3s ease;
+}
+
+header nav ul a:hover {
+  color: #374151;
+}
+
+header .user-action button {
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: 600;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+header .user-action button:hover {
+  background-color: #45a049;
+}
+
+/* Hero Section */
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 40px;
+  margin: 20px 30px;
+  background-color: #f9fafb;
+  border-radius: 12px;
+  gap: 40px;
+}
+
+.hero-section .left-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 600px;
+}
+
+.hero-section .left-container div:nth-child(1) span {
+  font-size: 12px;
+  color: hsl(215, 28%, 17%);
+  font-weight: 500;
+  background-color: #d1d5db;
+  padding: 6px 14px;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+.hero-section .left-container div:nth-child(2) h1 {
+  font-size: 42px;
+  color: #111827;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-top: 10px;
+}
+
+.hero-section .left-container div:nth-child(3) p {
+  color: #4b5563;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.hero-section .left-container div:nth-child(4) {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.hero-section .left-container div:nth-child(4) li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  list-style: none;
+}
+
+.hero-section .left-container div:nth-child(4) li i {
+  color: #15803d;
+  font-size: 20px;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.hero-section .left-container div:nth-child(4) li p {
+  color: #4b5563;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.hero-section .left-container div:nth-child(5) {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 12px 24px;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(76, 175, 80, 0.3);
+}
+
+.btn-secondary {
+  background-color: white;
+  color: #111827;
+  border: 1px solid #d1d5db;
+}
+
+.btn-secondary:hover {
+  background-color: #f3f4f6;
+  border-color: #9ca3af;
+}
+
+.hero-section .right-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+}
+
+.hero-section .right-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* How It Works Section */
+.how-it-works-section {
+  padding: 80px 40px;
+  background-color: white;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 60px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-header h2 {
+  font-size: 36px;
+  color: #111827;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.section-header p {
+  font-size: 16px;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+.steps-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.step-card {
+  background-color: #f9fafb;
+  padding: 40px 30px;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.step-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.step-number {
+  width: 50px;
+  height: 50px;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.step-card h3 {
+  font-size: 22px;
+  color: #111827;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.step-card p {
+  font-size: 15px;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+/* Shop by Aisle Section */
+.shop-by-aisle-section {
+  padding: 80px 40px;
+  background-color: #f9fafb;
+}
+
+.aisle-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.aisle-card {
+  background-color: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.aisle-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.aisle-icon {
+  width: 60px;
+  height: 60px;
+  background-color: #e8f5e9;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.aisle-icon i {
+  font-size: 32px;
+  color: #4CAF50;
+}
+
+.aisle-card h3 {
+  font-size: 22px;
+  color: #111827;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.aisle-card>p {
+  font-size: 15px;
+  color: #6b7280;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.aisle-card ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.aisle-card ul li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14px;
+  color: #4b5563;
+}
+
+.aisle-card ul li i {
+  color: #4CAF50;
+  font-size: 18px;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+/* CTA Section */
+.cta-section {
+  padding: 80px 40px;
+  background-color: #111827;
+  text-align: center;
+}
+
+.cta-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.cta-content h2 {
+  font-size: 36px;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.cta-content p {
+  font-size: 16px;
+  color: #d1d5db;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.cta-content .btn-primary {
+  padding: 14px 32px;
+  font-size: 16px;
+}
+
+/* Footer */
+footer {
+  background-color: #1f2937;
+  padding: 40px 40px 30px;
+  text-align: center;
+}
+
+.footer-content p {
+  color: #9ca3af;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.footer-tagline {
+  color: #6b7280;
+  font-size: 13px;
+}
+
+/* Tablet Responsiveness */
+@media (max-width: 1024px) {
+  .hero-section {
+    padding: 50px 30px;
+    margin: 15px 20px;
+    gap: 30px;
+  }
+
+  .hero-section .left-container div:nth-child(2) h1 {
+    font-size: 36px;
+  }
+
+  .section-header h2,
+  .cta-content h2 {
+    font-size: 32px;
+  }
+
+  .how-it-works-section,
+  .shop-by-aisle-section,
+  .cta-section {
+    padding: 60px 30px;
+  }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .mobile-menu-toggle {
+    display: block;
+  }
+
+  header {
+    padding: 15px 20px;
+    flex-wrap: wrap;
+  }
+
+  header nav {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 70%;
+    height: 100vh;
+    background-color: white;
+    flex-direction: column;
+    padding: 80px 30px 30px;
+    gap: 20px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    transition: left 0.3s ease;
+    z-index: 999;
+  }
+
+  header nav.active {
+    left: 0;
+  }
+
+  header nav ul {
+    font-size: 16px;
+  }
+
+  header nav ul a {
+    display: block;
+    padding: 10px 0;
+  }
+
+  header .user-action {
+    order: -1;
+  }
+
+  .hero-section {
+    flex-direction: column;
+    padding: 40px 20px;
+    margin: 15px 15px;
+    gap: 30px;
+  }
+
+  .hero-section .left-container,
+  .hero-section .right-container {
+    max-width: 100%;
+  }
+
+  .hero-section .left-container div:nth-child(2) h1 {
+    font-size: 28px;
+  }
+
+  .hero-section .left-container div:nth-child(3) p {
+    font-size: 15px;
+  }
+
+  .hero-section .left-container div:nth-child(5) {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-section .left-container div:nth-child(5) a {
+    width: 100%;
+  }
+
+  .hero-section .left-container div:nth-child(5) button {
+    width: 100%;
+  }
+
+  .how-it-works-section,
+  .shop-by-aisle-section,
+  .cta-section {
+    padding: 50px 20px;
+  }
+
+  .section-header h2,
+  .cta-content h2 {
+    font-size: 28px;
+  }
+
+  .section-header p,
+  .cta-content p {
+    font-size: 15px;
+  }
+
+  .steps-container,
+  .aisle-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .step-card,
+  .aisle-card {
+    padding: 30px 25px;
+  }
+
+  footer {
+    padding: 30px 20px 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  header .logo-wrapper h3 {
+    font-size: 16px;
+  }
+
+  header .logo-wrapper i {
+    font-size: 20px;
+  }
+
+  header .user-action button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .hero-section {
+    padding: 30px 15px;
+    margin: 10px;
+  }
+
+  .hero-section .left-container div:nth-child(1) span {
+    font-size: 11px;
+    padding: 5px 12px;
+  }
+
+  .hero-section .left-container div:nth-child(2) h1 {
+    font-size: 24px;
+  }
+
+  .hero-section .left-container div:nth-child(3) p {
+    font-size: 14px;
+  }
+
+  .hero-section .left-container div:nth-child(4) li p {
+    font-size: 13px;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .section-header h2,
+  .cta-content h2 {
+    font-size: 24px;
+  }
+
+  .step-card h3,
+  .aisle-card h3 {
+    font-size: 20px;
+  }
+
+  .step-card p,
+  .aisle-card>p {
+    font-size: 14px;
+  }
+
+  .step-number {
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+  }
+
+  .aisle-icon {
+    width: 55px;
+    height: 55px;
+  }
+
+  .aisle-icon i {
+    font-size: 28px;
+  }
+}
